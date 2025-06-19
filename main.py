@@ -15,19 +15,19 @@ def take_order():
         quantity = int(input("Enter quantity"))
 
 def generate_bill():
-        item = input(f"Enter item name:")
-        quantity = int(input("Enter quantity"))
+     item = input(f"Enter item name:")
+     quantity = int(input("Enter quantity"))
     
-        if item in food_item:
+     if item in food_item:
             price = food_item_price[item]
             total = price * quantity
             gst = total * 0.05
             final_amount = total + gst
             print("Bill")
             print(f"{total}/-")
-            print(f"{gst:.2f}")
-            print(f"{final_amount:.2f}")
-
+            print(f"{gst:}")
+            print(f"{final_amount}")
+             
 
 show_menu_item()
 take_order()
