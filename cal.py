@@ -20,7 +20,4 @@ elif operations == 3:
 elif operations == 4:
     print("Division:", div(a,b))
 else:
-    print("invalid operations")
-
-
-
+    print("invalid operations:)
