@@ -9,8 +9,7 @@ def div(a , b):
 print(" select your operations:\n",
 "1. Add\n", "2. Subtract\n", "3. Multiplication\n", "4. Division\n")
 operations = int(input("Enter your operation number:"))
-a = int(input("Enter your number:"))
-b = int(input("Enter your number:"))
+a, b = map(int, (input("Enter your number:")).split())
 if operations == 1:
     print("Addition:", add(a, b))
 elif operations == 2:
