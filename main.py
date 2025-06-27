@@ -19,7 +19,7 @@ def generate_bill():
      quantity = int(input("Enter quantity"))
     
      if item in food_item:
-            price = food_item_price[item]
+            price = food_item_price(item)
             total = price * quantity
             gst = total * 0.05
             final_amount = total + gst
